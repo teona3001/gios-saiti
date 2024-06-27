@@ -1,0 +1,354 @@
+   .container5{
+        max-width: 1150px;
+            padding-right: var(--bs-gutter-x, .75rem);
+            padding-left: var(--bs-gutter-x, .75rem);
+            margin-right: auto;
+            margin-left: auto;
+            box-shadow: 0px 1px 0px 0px rgba(19, 25, 28, 0.08);
+                padding-bottom: 60px;
+   }
+   .mt--115{
+    margin-top: 115px !important;
+   }
+   .slideshow-container5{
+    display: flex;
+   }
+   .testimonial{
+    position: relative;
+    margin-right: 40px;
+    /* max-width: 395px; */
+    min-width: 395px;
+    padding: 30px 30px 40px 30px;
+    border-radius: 10px;
+   height:100%;
+    /* background: var(--background-color-1); */
+   
+    }
+    .card-thumbnail{
+    overflow: hidden;
+    border-radius: 10px;
+     margin-bottom: 27px;
+     display: flex;
+    }
+        .subtitle5 {
+            font-size: 10px;
+            color: var(--color-primary);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 22px;
+        }
+.title5{
+    color: var(--color-heading-wv);
+        font-size: 24px;
+            margin-top: 10px;
+            margin-bottom: 6px;
+            line-height: 34px;
+            /* color: #c4cfde; */
+            font-weight: 700;
+}
+
+
+/*-----------------------------------------------------------*/
+
+
+
+.mySlides5 {
+    display: none;
+    position:relative;
+}
+
+
+/* Slideshow container */
+.slideshow-container5 {
+    /* max-width: 1000px; */
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev5,
+.next5 {
+   
+        position: absolute;
+        right: 25px;
+        width: 65px;
+        height: 65px;
+        line-height: 69px;
+    color: var(--color-primary) ;
+        text-align: center;
+        border: 0 none;
+        top: 5px;
+        z-index: 3;
+        border-radius: 6px;
+    right: 81px;
+}
+
+/* Position the "next button" to the right */
+.next5 {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev5:hover, .next5:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text5 {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  
+   
+  
+}
+
+/* Number text (1/3 etc) */
+
+
+/* The dots/bullets/indicators */
+.dot5 {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #cdc9ca;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active5, .dot5:hover {
+    background-color: #f9004d;
+}
+
+/* Fading animation */
+.fade5 {
+    animation-name: fade5;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade5 {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+.prev5, .next5,.text5 {font-size: 11px}
+}
+.card-description{
+position: relative;
+padding: 50px 40px 50px 40px;
+border-radius: 10px;
+/* background: var(--background-color-1); */
+/* box-shadow: var(--shadow-1); */
+margin-top: 115px;
+width: 100%;
+}
+.card-description::before{
+    content: "";
+        position: absolute;
+        width: 43px;
+        height: 5px;
+        background: #f0f3f7;
+        left: -41px;
+        z-index: -1;
+        top: 66px;
+    }
+.title-area5{
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+.title-info5{
+    text-align: left;
+}
+.title5-info5{
+font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 18px;
+   
+}
+.date5{
+    font-weight: 500;
+        font-size: 16px;
+        color: #7c838e;
+}
+.rating5{
+   text-align: left;
+padding: 5px 17px 9px 17px;
+    border-radius: 6px;
+  color: rgb(251 184 80);
+   height: auto;
+    /* display: inline-block !important; */
+}
+.seperator{
+    position: relative;
+}
+.seperator::after{
+content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #f0f3f7;
+    top: 20px;
+}
+.discription{
+    margin-top: 45px;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--color-body-white);
+            
+            font-weight: 500;
+        
+}
+.discription::after{
+    content: "";
+        position: absolute;
+        width: 130px;
+        height: 130px;
+        left: 0;
+        top: -130px;
+        background: transparent;
+        background-image: url(../icons/quote.png);
+        background-size: cover;
+        z-index: -1;
+        opacity: 0.2;
+        background-repeat: no-repeat;
+        background-position: center center;
+}
+.silck-dots{
+width: auto;
+    top: auto;
+    z-index: 3;
+    position: absolute;
+    left: 50%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-50%);
+    bottom: -50px;
+  
+}
+@media (max-width: 1200px) {
+
+    .container5 {
+    
+            width: 902px;
+            
+        }
+    .testimonial{
+    min-width: 246px;
+    }
+}
+@media (max-width: 992px) {
+
+    .container5 {
+       
+            width: 665px;
+    }
+    .mySlides5{
+        width:100%;
+    }
+        .slideshow-container5{
+        display: flex;
+        flex-direction: column;
+        }
+        .testimonial{
+            display: flex;
+           width: 100%; 
+           height: 169px;
+        }
+        .card-thumbnail{
+            margin-right: 25px;
+            margin-bottom: 0px;
+        }
+        .prev5,.next5{
+            display: none;
+        }
+        .designation{
+        font-size: 15px;
+        }
+        .discription::after{
+        display: none;
+       
+        }
+                .card-description {
+                    position: relative;
+                    padding: 50px 40px 50px 40px;
+                  
+                    margin-top: 27px;
+                    width: 100%;
+                }
+        .title5-info5{
+        font-size: 30px;
+        }
+        .date5{
+        font-size: 17px;
+        }
+        .card-description::before{
+        display: none;
+        }
+}
+@media (max-width: 767px) {
+
+    .container5 {
+        width: 486px;
+    }
+         .title5-info5 {
+             font-size: 21px;
+         }
+    
+         .date5 {
+             font-size: 13px;
+         }
+        .discription{
+        font-size: 19px;
+        }
+}
+@media (max-width: 575px) {
+    /* .mySlides5{
+        height: 400px;
+    } */
+    .card-description{
+    padding: 20px;
+    }
+    .slideshow-container5{
+      padding-top: 110px;  
+    }
+    
+    .container5 {
+     height:auto;
+     width: auto; 
+    
+    }
+     .testimonial {
+    display: flex;
+    width: 100%;
+    height: 491px;
+    flex-direction: column;
+    padding: 20px;
+                }
+    .card-thumbnail{
+      margin-right: 0%;  
+     
+    }
+}
+@media (max-width: 479px){
+.title-area5 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    }
+  .title-info5{
+padding-bottom: 25px; 
+  }  
+}

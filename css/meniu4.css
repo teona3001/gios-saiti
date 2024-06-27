@@ -1,0 +1,10 @@
+.main-grid-1{
+    display: flex;
+    justify-content: center;
+    border: 1px solid chartreuse;
+}
+.main-grid-2{
+    border: 1px solid chartreuse;
+    height: 300px;
+    width: 50%;
+    }

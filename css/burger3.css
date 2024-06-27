@@ -1,0 +1,217 @@
+
+.header_menu1 {
+    display: none;
+}
+.header_body1 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;  
+}
+.main_top{
+border-bottom-color: #dce1e4;
+border-bottom: 1px solid rgba(143 125 125 / 10%);
+padding-bottom: 20px;
+}
+.main_top1 {
+     font-size: 16px;
+    line-height: 29px;
+    margin-top: 20px;
+    margin-right: 0;
+    padding-right: 0;
+    color: var(--color-lighten);
+}
+
+.header_list,.title,.header_menu1.active1 li a
+{
+    position: relative;
+    transition: var(--transition);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: var(--font-secondary);
+    margin: 0%;
+    color:var(--color-body-white);
+    display: inline;
+    font-weight:500;
+}
+.header_list li {
+   
+        margin-top: 20px;
+        display: flex;
+         flex-direction: column;
+         padding-left: 0;
+}
+  .header_link li {
+      
+     display: block;
+     margin:8px 0;
+  }
+  .facebook{
+    color:var(--color-red-dark);
+  }
+  .header_list{
+    margin-top:20px;
+   display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    
+
+  }
+  .d-flex{
+    display: flex;
+    
+  }
+   .body.body1 {
+       opacity: 0.3;
+   }
+   .social-share-style-1,.title{
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    /* color: var(--color-lightn); */
+    display: inline-block;
+    margin-bottom: 20px;
+   }
+@media(max-width:1199px) {
+.header_menu1 {
+    background-color: #ffffff;
+       padding:25px 31px;
+        position: fixed;
+        top: 0;
+        left: -27%;
+        width: 336px;
+        height: 100vh;
+        overflow: auto;
+        opacity: 0.1;
+        transition: all 0.5s ease-out;
+        z-index:999;
+        visibility: hidden;
+         overflow: auto;
+         display:block ;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
+    }
+        .header_menu1.active1{
+        left:0;
+        visibility: visible;
+        transition: all 0.8s;
+        opacity:1;
+        }
+ .body.body1 {
+       
+        /* z-index: 9999;
+        opacity: 0.1; */
+        
+
+ }
+
+.header1 {
+/* position: fixed; */
+width: 100%;
+top: 0;
+left: 0;
+z-index: 62;
+        }
+.header1:before {
+ content: '';
+position: absolute;
+ top: 0;
+left: 0;
+ width: 100%;
+height: 80px;
+
+z-index: 60;
+}
+
+.header1_logo1{
+    
+    border-radius: 50%;
+    overflow:hidden;
+    position: relative;
+    z-index:60;
+}
+.header_list1{
+    z-index:70 ;
+}
+.header_button1 {
+ display: block;
+position: relative;
+width: 17px;
+height: 20px;
+ z-index: 60;
+
+}
+.header_button1 span{
+ position: absolute;
+ background-color: var(--color-red-dark);
+ left: 0;
+width: 100%;
+ height: 2px;
+top: 9px; 
+/* transition: all 0.3s ease 0s;*/
+}
+.header_button0.vvvv{
+display: flex;
+align-items: center;
+justify-content: space-around;
+   height:40px;
+   width:40px;
+    border-radius: 50%;
+-webkit-box-shadow: 21px 25px 24px -8px rgba(175, 178, 180, 0.2) inset,
+        18px 22px 38px -1px rgba(175, 178, 180, 0.58);
+    -moz-box-shadow: 21px 25px 24px -8px rgba(175, 178, 180, 0.2) inset,
+        18px 22px 38px -1px rgba(175, 178, 180, 0.58);
+    box-shadow: 21px 25px 24px -8px rgba(175, 178, 180, 0.2) inset,
+        8px 22px 38px -1px rgba(175, 178, 180, 0.58);
+        
+}
+
+ .header_button1:before,
+.header_button1:after
+ {
+ content: '';
+  background-color:var(--color-red-dark);
+ position: absolute;
+ width: 100%;
+ height: 2px;
+ left: 0;
+ transition: all 0.3s ease 0s;
+ 
+ }
+ .header_button1:before{
+top:0;
+ }
+.header_button1:after{
+  bottom:0;
+   }
+ .header_button1.active span {/* js შექმნილი ბლოკი*/
+  transform: scale(0); /*scale ნიშნავს მაშტაბი, მაშტაბის სეცვლას,ჩვრმ შემთხვევაში შულ გავაქრე */
+ }
+        
+ .header_button1.active:before{ /*js შექმნილი ბლოკი*/
+ transform: rotate(45deg);/*rotate ანუ როტაციას ბრუნვას ნიშნავს,ჩვენ შემთხვევაში ატრიალებს ჯოხს */
+ top: 9px;
+}
+        
+.header_button1.active:after {/*js შექმნილი ბლოკი*/
+ transform:rotate(-45deg); /*rotate ანუ როტაციას ბრუნვას ნიშნავს,ჩვენ შემთხვევაში ატრიალებს ჯოხს */
+ bottom:9px;
+
+}
+.social-share-style-1{
+ border-top: 1px solid rgba(255, 255, 255, 0.1);
+padding-top: 20px;
+ margin-top: 100px !important;
+}
+}
+@media(max-width:500px) {
+    .header_menu1 {
+        width: 70%;
+    }
+}
+@media(max-width:400px) {
+    .header_menu1 {
+        width: 100%;  
+    }
+}

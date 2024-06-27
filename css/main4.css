@@ -1,0 +1,397 @@
+* {
+    /* transition: var(--transition); */
+}
+.main-grid-1{
+    /* border: 1px solid chartreuse; */
+    display: flex;
+        justify-content: center;
+        /* display: block; */
+}
+.main-grid-2{
+    /* border: 1px solid chartreuse; */
+    height: auto;
+    width: 50%;
+    padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 45px;
+    }
+    .subtitle{
+
+    }
+.maintitle{
+font-size: 36px;
+    font-weight: 700;
+    line-height: 62px;
+    /* color: var(--color-lightn); */
+}
+.experience-list{
+    border-left: 5px solid #d9dee2;
+    padding:0 0 0 30px;
+}
+.resume-single-list{
+position: relative;
+    z-index: 2;
+    margin-top: 50px;
+    padding: 45px 40px;
+    border-radius: 6px;
+    /* background: var(--background-color-1);
+    box-shadow: var(--shadow-1); */
+    /* transition: var(--transition); */
+}
+.innerr::before{
+    position: absolute;
+        content: "";
+        width: 28px;
+        height: 5px;
+        right: 100%;
+        top: 63px;
+        transform: translateY(-7px);
+        background:#d9dee2;;
+        z-index: 0;
+}
+.heading{
+display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid#d9dee2;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+
+.title1 h4{
+/* color: var(--color-lightn); */
+    font-family: var(--font-primary);
+    font-size: 24px;
+    line-height: 39px;
+    margin-bottom: 7px;
+    font-weight: 500;
+    /* transition: var(--transition); */
+
+
+}
+.title2{
+    color: #7c838e;
+        display: block;
+        font-size: 14px;
+        margin-bottom:20px ;
+}
+.resume-single-list:hover .title2{
+    background-color: #f9004d;
+        color: #fff;
+}
+.resume-single-list:hover{
+background-color: #f9004d;
+    color: #fff;
+}
+
+.resume-single-list:hover .title3{
+    background-color: #f9004d;
+        color: #fff;
+}
+
+.personal-experience-inner .experience-list .resume-single-list .inner .heading .title span {
+    color: #7c838e;
+    display: block;
+    font-size: 14px;
+}
+
+.date-of-time{
+    display: inline-block;
+    border-radius: 10px;
+
+}
+.title3{
+        color: var(--color-primary);
+        display: block;
+        font-size: 16px;
+        padding: 0 15px;
+        height: 36px;
+        line-height: 36px;
+        border-radius: 6px;
+        /* transition: var(--transition); */
+        font-weight: 500;
+}
+
+.description1{
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color-body);
+}
+.resume-single-list:hover .description1 {
+    background-color: #f9004d;
+    color: #ffffff;
+}
+.tab{
+    display: flex;
+    background: var(--gradient-box-w);
+        box-shadow: var(--shadow-white-3);
+        border-radius: 10px;
+        width:100%;
+        margin:61px 0 0 0;
+        flex-basis: 25%;
+        margin-left: 0;
+         margin-right: 0;
+            
+    }
+   
+li,.dot{
+    /* cursor: pointer;
+font-family: var(--font-primary);
+    padding: 30px 20px;
+    text-transform: capitalize;
+    font-size: var(--font-size-b1);
+    font-weight: 500;
+    
+    border: 0 none;
+    transition: all 0.5s;
+    background: transparent;
+    border-radius: 10px;
+   color: #000;
+    text-align: center;
+    flex-basis: 25%; */
+   
+}
+  .active, .dot:hover {
+
+      border-radius: 10px;
+      box-shadow: var(--shadow-white-3);
+      text-decoration: none;
+      color: #f9004d;
+
+  }
+.tablinks{
+/* width:24%; */
+padding-left: 0;
+ margin-bottom: 0;
+}
+
+.experience-list .resume-single-list .innerr::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 5px solid #d9dee2;;
+    border-radius: 100%;
+    right: 104%;
+    top: 55px;
+    transform: translateY(-7px);
+    background:#d9dee2;
+    
+    
+} 
+
+.experience-list .resume-single-list .innerr::after {
+    border: 5px solid #d9dee2;
+    background: #ffffff;
+}
+.resume-single-list:hover .innerr::after {
+
+    background-color: #f9004d;
+    color: #fff;
+}
+
+#Paris{
+    display:none ;
+}
+
+.progress-charts .progress {
+    height: 13px;
+    overflow: visible;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 3px;
+    background: #212428;
+    box-shadow: inset 8px 8px 16px rgba(0, 0, 0, 0.4588235294), inset -8px -8px 16px rgba(56, 62, 69, 0.4588235294);
+}
+
+.progress-charts + .progress-charts {
+    margin-top: 30px;
+}
+
+element.style {
+    width: 100%;
+    visibility: visible;
+    animation-duration: 0.5s;
+    animation-delay: 0.3s;
+    animation-name: fadeInLeft;
+}
+.white-version .rn-resume-area .progress-charts .progress .progress-bar {
+    background: linear-gradient(145deg, #fff 0%, var(--color-primary) 100%);
+}
+/* .progress-bar {
+    background: linear-gradient(145deg, #fff 0%, var(--color-primary) 100%);
+} */
+.white-version .rn-resume-area .progress-charts h6.heading {
+    color: var(--color-heading-wv);
+    font-weight: 500;
+}
+.white-version .rn-resume-area .progress-charts .progress .progress-bar span.percent-label {
+    color: var(--color-body-white);
+}
+.progress-charts .progress .progress-bar {
+    overflow: visible;
+    position: relative;
+    border-radius: 14px;
+    background: #f02981;
+    background: linear-gradient(145deg, #f02981 0%, #c81901 100%);
+}
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+.progress-bar {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #0d6efd;
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+}
+.progress {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    font-size: .75rem;
+    background-color: #e9ecef;
+    border-radius: .25rem;
+}
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y)* -1);
+    margin-right: calc(var(--bs-gutter-x)* -.5);
+    margin-left: calc(var(--bs-gutter-x)* -.5);
+}
+
+.mySlides {
+    display: none
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+@media (max-width:1200px) {
+    .heading{
+     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    }
+    .resume-single-list{
+    padding: 30px 25px;
+    }
+   li,.dot{
+     font-size: 16px;
+    }
+        .experience-list {
+            border-left: 5px solid #d9dee2;
+            padding: 0 0 0 23px;
+        }
+}
+@media (max-width:992px) {
+    .heading {
+    display: flex;
+    align-items: center;
+        flex-direction: row;
+    }
+.main-grid-1{
+    display: flex;
+    flex-direction: column;
+}
+.main-grid-2{
+width: 100%;
+ margin-top: 45px;
+
+}
+ .experience-list {
+     border-left: 5px solid #d9dee2;
+     padding: 0 0 0 33px;
+ }
+}
+@media only screen and (max-width: 748px){
+.tab {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+        .experience-list {
+            border-left: 5px solid #d9dee2;
+            padding: 0 0 0 27px;
+        }
+}
+@media only screen and (max-width: 449px) {
+    .main-grid-2{
+    padding-left: 0px;
+        
+     padding-right: 0px;  
+    }
+  
+  .experience-list{
+    padding: 0 0 0 21px;
+  }
+  .resume-single-list{
+    margin-top: 25px;
+  }
+  .heading {
+      display: flex;
+    flex-direction: column;
+        align-items: flex-start;
+  }
+  .maintitle{
+    font-size: 25px;
+  }
+  .title1 h4{
+    font-size: 22px;
+  }
+  .main-grid-2{
+margin-top: 45px;
+  }
+}
+@media only screen and (max-width: 300px) {
+
+}
+

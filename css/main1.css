@@ -1,0 +1,589 @@
+ body{
+font-family: var(--font-primary);
+ }
+ *{
+    /* border: 1px solid black; */
+ }
+ #container div {
+      border: 1px solid black;
+  }
+  img {
+    height: 100%;
+    width: 100%;
+}
+ .about {
+display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    grid-template-rows: repeat(1, auto);
+    /* grid-gap: 10%; */
+    width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+justify-content: space-evenly;
+box-shadow:0px 1px 0px 0px rgba(19, 25, 28, 0.08);
+ position: relative;
+ }
+
+ .about-card {
+     /*eifeli*/
+     grid-column: 2/3;
+     /*horizontaluri xazi*/
+     grid-row: 1/2;
+     /*vertikaluri xazi*/
+ }
+ .about-cards
+ {
+     width: 730px;
+     height:608px;
+     border: var(--zura);
+     margin-top:90px;
+     margin-bottom:60px ;
+     /* border: 1px solid chartreuse */
+    grid-column: 1/2;
+        /*horizontaluri xazi*/
+        grid-row: 1/2;
+        /*vertikaluri xazi*/
+        
+ }
+   .about-text {
+       /* margin-top: 60px; */
+       /* margin-bottom:40px ; */
+       letter-spacing: 4px;
+       padding-right: 16%;
+       font-size: 14px;
+    width: 100%;
+       border: var(--zura);
+   }
+/*---------------Text animation----------------------- */
+   .about-container {
+       display: flex;
+       align-items: center;
+       font-size: 5.8rem;
+       /* padding: 0.5rem; */
+       font-weight: bold;
+       letter-spacing: 0.3rem;
+       /* text-align: center; */
+       overflow: hidden;
+       border: var(--zura);
+       /* background-color: rgb(204, 52, 52); */
+       width: 100%;
+       height:159px ;
+       font-family:var(--font-secondary) ;
+   }
+   .tk {
+       color: #f83939;
+       width: 100%;
+       }
+   .typed-text {
+    font-size: 80%;
+    }
+      .cursor {
+    font-size: 55%;
+}
+.about-container span.typed-text.textArray {
+    font-weight: normal;
+    color: #080808;
+
+}
+.about-container span.cursor {
+    display: inline-block;
+    background-color: #f83939;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+}
+.about-container span.cursor.typing {
+    animation: none;
+}
+.feather-facebook,
+.feather-instagram,
+.feather-linkedin
+{
+ color: var(--color-body-white);
+ opacity: 0.8;
+ border-radius:5px ;
+
+display: flex;
+    align-items: center;
+    width: 25px;
+    justify-content: space-around;
+    -webkit-text-stroke: 2px crimson;
+    height: 25px;
+    padding: 17px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: 0.7s;
+}
+
+@keyframes blink {
+    0% {
+        background-color: #f83939;
+    }
+
+    49% {
+        background-color: #f83939;
+    }
+
+    50% {
+        background-color: transparent;
+    }
+
+    99% {
+        background-color: transparent;
+    }
+
+    100% {
+        background-color: #f83939;
+    }
+
+}
+/*-------------------------------------------*/
+.about-card-description{
+       border: var(--zura);
+       
+       height: auto;
+       line-height: 30px;
+       opacity: 0.7;
+       font-size: 18px;
+        padding-right: 16%;
+   }
+
+   .socials{
+       display: flex;
+       align-items: center;
+       border: var(--zura);
+       justify-content: space-between;
+       width: 100%;
+       height: auto;
+       margin-top:125px;
+
+   }
+   .socials-cards{
+       display: flex;
+       justify-content: space-around;
+       flex-direction: column;
+       border: var(--zura);
+       width: 42%;
+       height: 100%;
+       margin: 10px;
+   }
+   .socials-cards-titel {
+       border: var(--zura);
+       /* padding: 10px; */
+       color: #000000;
+       font-weight: 500;
+       font-size: 9px;
+       letter-spacing: 2px;
+       opacity: 0.7;
+   }
+   .socials-bloki{
+       display: flex;
+       align-items: center;
+       justify-content: flex-start;
+       border: var(--zura);
+       width: 100%;
+       height: 50%;
+      margin-left: -12px;
+   }
+ .socials-bloki-son {
+       display: flex;
+       align-items: center;
+       width: 27px;
+       justify-content: space-around;
+       -webkit-text-stroke: 2px crimson;
+       color: transparent;
+       color: cornsilk;
+       height: 27px;
+       padding: 17px;
+       margin: 10px;
+       border-radius: 5px;
+       transition: 0.7s;
+    justify-content: center;
+   
+   }
+        .social-share {
+            display: flex;
+            width: 271px;
+            height: 89px;
+            align-items: center;
+        }
+   .about-card {
+       display: flex;
+       align-items: flex-end;
+       justify-content: center;
+       border: var(--zura);
+    width: 510px;
+        height: 70%;
+        border: var(--zura);
+        margin-top: 25%;
+        margin-bottom: 10%;
+    
+   } 
+   .bloki42 {
+    width: 100%;
+        height: 700px;
+       border: var(--zura);
+    position:relative;
+   }
+ .bloki41 {
+     width: 100%;
+     height: 80%;
+     z-index: -2;
+     position: absolute;
+     border-radius: 2%;
+     bottom: 0%;
+
+ }
+.about-crawl-button:link,
+/*mcocavi gilaki*/
+.about-crawl-button:visited {
+    display: flex;/* position: fixed;saiyze dafiqsireba */
+    writing-mode: vertical-lr;/*teqtis vertikali */
+    text-orientation: upright;/*teqstis amotrialeba*/
+    letter-spacing: 4px;/*asoebis dashoreba*/
+    align-items: center;
+    background-color: white;
+    color: #f9004d;
+    height: 134px;
+    width: 41px;
+    text-decoration: none;
+    border-radius: 7%;
+    justify-content: center;
+    /* width: 2.5%; */
+    /* position:sticky; */
+    right:0;
+    top:44%;
+    position: fixed;
+    box-sizing:content-box;
+    z-index: 100;
+}
+
+   @media screen and (max-width:1600px) {
+    .about{
+      
+    display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, auto);
+        /* grid-gap: 10%; */
+        width: 1121px;
+        margin-right: auto;
+        margin-left: auto;
+        justify-content: space-evenly;
+       
+        position: relative;
+    }
+    
+.about-cards {
+    width: 595px;
+    height: 608px;
+    border: var(--zura);
+    margin-top: 90px;
+    margin-bottom: 60px;
+    /* border: 1px solid chartreuse; */
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+.bloki42 {
+width: 100%;
+height:723px;
+           }
+.about-container { /*morbenali abzaci*/
+line-height: 56px; /*abzacebs Soris dashoreba*/
+ padding: 0%;
+font-size: 351%;
+       }
+.about-card-description{
+font-size: 17px;
+ padding-right: 9%;
+        }
+.socials-cards {
+display: flex;
+justify-content: space-around;
+flex-direction: column;
+border: var(--zura);
+width: 50%;
+height: 100%;
+/* border: 1px solid chartreuse */
+ }
+
+   }
+ @media screen and (max-width:1400px) {
+.about {
+ /* width: 1110px;
+height: 100%;
+grid-gap: 0%; */
+
+}
+.about-card {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border: var(--zura);
+    width: 460px;
+    height:526px ;
+    border: var(--zura);
+    margin-top: 143px;
+    margin-bottom: 60px;
+}
+.about-cards{
+  margin-right:60px ;  
+        margin-top: 58px;
+}
+.about-container {
+    line-height: 56px;
+    padding: 0%;
+    font-size: 316%;
+}
+.bloki42 {
+width: 100%;
+height:620px;
+       }
+    }
+   @media only screen and (max-width:1199px){
+    .about {
+    width: 936px;
+        height: 608px;
+        }
+    .about-card{
+    height: 447px;
+    width: 392px;
+    }
+.burger {
+display: none;
+ }
+.socials{
+margin-top: 5px;
+ }
+.about-cards {
+width: 547px;
+ height: 608px;
+ margin-right: 0px;
+}
+.about-card-description {
+font-size: 17px;
+padding-right: 23%;
+}
+.bloki4 {
+width: 374px;
+margin-right: 10%;
+}
+.bloki42 {
+height:535px;
+  }
+.bloki41 {
+height: 413px;
+       }
+.about-container {
+     font-size: 4.9rem;
+     line-height: 56px;
+      height: 140px;
+     }
+   }
+  @media only screen and (max-width:991px)
+    {
+.about {
+margin-right: auto;
+    margin-left: auto;
+display: flex;
+flex-direction: column-reverse;
+justify-content: flex-end;
+ align-items: center;
+grid-gap: 0%;
+height:auto;
+width: 743px;
+/* height: 800px; */
+box-shadow: 0px ;
+ }
+.about-cards {
+width: 90%;
+height:auto ;
+margin-top: 0px;
+}
+.about-card {
+height: 807px;
+width: 100%;
+margin-top: 112px;
+}
+.about-text {
+        padding-right: 0%;
+    }
+ 
+.about-card-description{
+height: 150px;
+ padding-right: 0%;
+}
+.socials {
+margin-top: 0px;
+margin-bottom: 46px;
+}
+.bloki41 {
+height: 774px;
+}
+.about-crawl-button{
+margin-bottom: 0px;
+}
+.bloki42 {
+ width:auto;
+ height: 928px;
+ }
+}
+
+   @media only screen and (max-width: 767px) {
+.about {
+width: 534px;
+margin-right: auto;
+    margin-left:auto;
+height: auto;
+display: flex;
+flex-direction: column-reverse;
+ justify-content: flex-end;
+align-items: center;
+margin-top: 0px;
+}
+        
+.about-card {
+    height: 721px;
+    width: 100%;
+    margin-top: 1px;
+}
+.about-cards{
+width: 100%;
+}
+.about-card-description {
+height: auto;
+line-height: 32px;
+font-size: 98%;
+padding: 0px;
+margin-bottom: 10%;
+}
+ 
+.bloki41 {
+ height:588px;
+ width:100%;
+ /* margin-right:20% ; */
+}
+.bloki42 {
+width: 100%;
+  height: 717px;;
+ }
+ } 
+
+ @media screen and (max-width:576px){
+.about{
+width:506px ;
+       min-width: 345px;
+ vertical-align: middle;
+margin-right: auto;
+    margin-left: auto;
+  height:auto;
+}
+.about-cards{
+ /* height:100%; */
+ width:300 ;
+ }
+ .about-card {
+width:100%;
+ }
+ .socials{
+display: flex ;
+flex-direction: column;
+height: auto;
+align-items: flex-start;
+ }
+  .about-card-description{
+height: auto;
+ line-height: 32px;
+font-size: 110%;
+ padding: 0px;
+ margin-bottom:10% ;
+ }
+.header_list li{
+margin-top: 27px;
+}
+.about-container {
+line-height: 53px;
+ padding: 0%;
+font-size: 192%;
+}
+.about-text {
+margin-top: 43px;
+margin-bottom: 24px;
+ }
+.bloki41{
+
+height:79%;
+}
+.bloki42 {
+ height:100%;
+
+ } 
+.main_top1 {
+font-size: 17px;
+margin-right: 50px;
+margin-right: 13%;
+                   }
+.socials-cards{
+width: 61%;
+ margin: 0px;
+}
+.header_menu1 {
+width: 79%;
+ height: 100%;
+ padding: 2%;
+}
+}
+
+ @media screen and (max-width:376px) {
+.Header-logo{
+width: 116px;
+
+}
+.about-container {
+line-height: 34px;
+ padding: 0%;
+font-size: 27px;
+} 
+.about-card{
+   width:100%; 
+   height:auto;
+}  
+.about{
+margin-right: auto;
+    margin-left: auto;
+    width: 367px;
+        min-width: 200px;
+}    
+.about-card-description{
+line-height: 33px;
+font-size:95%;
+}
+.bloki42 {
+    height:100%;
+    width: 100%;
+    margin-top: 1px;
+ 
+}
+.bloki41 {
+height:71%;
+width: 100%;
+margin-bottom:8px;
+ }
+.about-text{
+ margin-top: 43px;
+ margin-bottom: 24px;
+ }
+.main_top1{
+margin-right: 50px;
+margin-right: 13%;
+   }
+.header_menu1{
+ width: 84%;
+ height:100% ;
+ padding: 7px 9px;
+ }
+.social-share-style-1 {
+border-top: 1px solid rgba(255, 255, 255, 0.1);
+padding-top: 0px;
+margin-top: 52px !important;
+}
+}
